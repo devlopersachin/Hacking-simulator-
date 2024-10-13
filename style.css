@@ -1,0 +1,61 @@
+body {
+    background-color: black; /* Set the background to black */
+    color: green; /* Set text color to green */
+    font-family: Arial, sans-serif; /* Use a simple font */
+    margin: 0;
+    padding: 20px;
+}
+
+#loading-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height of viewport */
+}
+
+#loading-text {
+    font-size: 24px; /* Increased font size */
+}
+
+#enter-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: green; /* Green button */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#console {
+    display: flex;
+    flex-direction: column;
+    background-color: #111; /* Dark background for console */
+    border: 2px solid green; /* Green border */
+    padding: 20px; /* Padding inside console */
+    width: 100%; /* Full width for console */
+    max-width: 800px; /* Limit maximum width */
+    height: 60%; /* Set a height for the console */
+    max-height: 80vh; /* Limit maximum height */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    margin: 0 auto; /* Center the console */
+    cursor: text; /* Change cursor to indicate typing */
+}
+
+#output {
+    flex: 1; /* Allow output area to grow */
+    overflow-y: auto; /* Allow scrolling for output */
+    margin-bottom: 10px; /* Space between output and input */
+    white-space: pre-wrap; /* Preserve whitespace for formatting */
+}
+
+#input {
+    width: 100%; /* Full width input */
+    padding: 10px; /* Padding inside input */
+    border: 1px solid green; /* Green border for input */
+    background-color: #222; /* Darker background for input */
+    color: green; /* Green text color for input */
+    opacity: 0; /* Hide the input field */
+    height: 0; /* Set height to zero */
+}
